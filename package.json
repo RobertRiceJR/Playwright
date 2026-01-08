@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+"scripts": {
+    "pretest": "tsc --incremental -p tsconfig.json",
+    "test": "playwright test -c e2e/tests"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RobertRiceJR/Playwright.git"
